@@ -173,7 +173,7 @@ jobs:
               --set database.deploy=false \
               --set backend.image.tag=${{ env.IMAGE_TAG }} > manifests/anythink.yml
 
-      - name: Deploy
+      - name: Deploy THINGS
         id: deploy
         uses: armory/cli-deploy-action@main
         with:
